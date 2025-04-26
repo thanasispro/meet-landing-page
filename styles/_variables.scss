@@ -1,0 +1,87 @@
+// Text presets
+@mixin text-preset-1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem; // 40px mobile
+  line-height: 110%;
+  letter-spacing: 0;
+  
+  @media (min-width: 768px) {
+    font-size: 3rem; // 48px tablet
+  }
+  
+  @media (min-width: 1024px) {
+    font-size: 3.5rem; // 64px desktop (original)
+  }
+}
+
+@mixin text-preset-2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 2rem; // 32px mobile
+  line-height: 110%;
+  letter-spacing: 0;
+  
+  @media (min-width: 768px) {
+    font-size: 2.25rem; // 36px tablet
+  }
+  
+  @media (min-width: 1024px) {
+    font-size: 2.5rem; // 40px desktop (original)
+  }
+}
+
+@mixin text-preset-3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 0.75rem;
+  line-height: 110%;
+  letter-spacing: 0.25rem;
+  
+  @media (min-width: 768px) {
+    font-size: 0.875rem; // 14px tablet
+  }
+  
+  @media (min-width: 1024px) {
+    font-size: 1rem; // 16px desktop (original)
+  }
+}
+
+@mixin text-preset-4 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-5 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+// Colors
+$cyan-600: #4D96A9;
+$cyan-300: #8FE3F9;
+$purple-600: #855FB1;
+$purple-300: #D9B8FF;
+$slate-900: #28283D;
+$slate-600: #87879D;
+$slate-300: #D1D1DF;
+$white: #FAFAFA;
+
+// Spacing
+$space-1400: 7rem;
+$space-1000: 5rem;
+$space-900: 4.5rem;
+$space-800: 4rem;
+$space-700: 3.5rem;
+$space-500: 2.5rem;
+$space-400: 2rem;
+$space-300: 1.5rem;
+$space-200: 1rem;
+$space-100: 0.5rem;
+$space-50: 0.25rem;

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Meet Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Main Navigation">
+        <img src="./assets/logo.svg" alt="Meet Logo" class="logo" />
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <picture class="hero-image-left">
+          <source
+            srcset="./assets/tablet/image-hero.png"
+            media="(max-width: 1240px)"
+          />
+          <img
+            src="./assets/desktop/image-hero-left.png"
+            alt="Person collaborating on a video call"
+          />
+        </picture>
+        <div class="hero-content">
+          <h1>Group Chat for Everyone</h1>
+          <p>
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+          <div class="buttons">
+            <custom-button class="primary">
+              <button>Download v1.3</button>
+            </custom-button>
+            <custom-button class="secondary">
+              <button>What is it?</button>
+            </custom-button>
+          </div>
+        </div>
+        <picture class="hero-image-right">
+          <img
+            src="./assets/desktop/image-hero-right.png"
+            alt="Person collaborating on a video call"
+          />
+        </picture>
+      </section>
+
+      <section class="meet">
+        <number-circle number="01"></number-circle>
+        <div class="meet-picture-wrapper">
+          <picture>
+            <img
+              src="./assets/desktop/image-woman-in-videocall.jpg"
+              alt="Woman in a video call"
+            />
+          </picture>
+          <picture>
+            <img
+              src="./assets/desktop/image-women-videochatting.jpg"
+              alt="Two women video chatting"
+            />
+          </picture>
+          <picture>
+            <img
+              src="./assets/desktop/image-man-texting.jpg"
+              alt="Man texting on his phone"
+            />
+          </picture>
+          <picture>
+            <img
+              src="./assets/desktop/image-men-in-meeting.jpg"
+              alt="Men in a meeting"
+            />
+          </picture>
+        </div>
+        <div class="text">
+          <div class="title-wrapper">
+            <h2>Built for modern use</h2>
+            <h3>Smarter meetings, all in one place</h3>
+          </div>
+          <p>
+            Send messages, share files, show your screen, and record your
+            meetings — all in one workspace. Control who can join with
+            invite-only team access, data encryption, and data export.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section" role="contentinfo">
+      <div class="number-wrapper">
+        <number-circle number="02"></number-circle>
+      </div>
+      <div class="section-content">
+        <h2>Experience more together</h2>
+        <p>
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
+        <div class="footer-cta">
+          <custom-button class="secondary">
+            <button>Download v1.3</button>
+          </custom-button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./components/button.js"></script>
+    <script src="./components/section.js"></script>
+  </body>
+</html>

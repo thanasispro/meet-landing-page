@@ -1,0 +1,333 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 3rem 1.25rem 0;
+}
+nav .logo {
+  width: 7.375rem;
+  height: 1.75rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  overflow-x: hidden;
+}
+@media (min-width: 48rem) {
+  .hero {
+    padding: 4rem 0;
+  }
+}
+@media (min-width: 77.5rem) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    padding-top: 6rem;
+  }
+}
+.hero .hero-image-left,
+.hero .hero-image-right {
+  width: calc(100% + 4rem);
+  margin-left: -2rem;
+  margin-right: -2rem;
+  max-width: none;
+}
+@media (min-width: 77.5rem) {
+  .hero .hero-image-left,
+  .hero .hero-image-right {
+    display: block;
+    max-width: 37.5rem;
+  }
+}
+.hero .hero-image-left img,
+.hero .hero-image-right img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hero .hero-image-right {
+  display: none;
+}
+@media (min-width: 77.5rem) {
+  .hero .hero-image-right {
+    display: block;
+  }
+}
+.hero .hero-content {
+  padding: 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+@media (min-width: 48rem) {
+  .hero .hero-content {
+    padding: 4rem 2rem;
+  }
+}
+@media (min-width: 77.5rem) {
+  .hero .hero-content {
+    margin: 0;
+    padding: 0 4rem;
+    text-align: center;
+    align-items: center;
+  }
+}
+.hero .hero-content h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 110%;
+  letter-spacing: 0;
+  color: #28283D;
+}
+@media (min-width: 768px) {
+  .hero .hero-content h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hero .hero-content h1 {
+    font-size: 3.5rem;
+  }
+}
+.hero .hero-content p {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #87879D;
+}
+.hero .hero-content .buttons {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+@media (min-width: 48rem) {
+  .hero .hero-content .buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media (min-width: 77.5rem) {
+  .hero .hero-content .buttons {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+}
+
+.meet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 2rem 4rem;
+  gap: 4rem;
+  margin-bottom: 6.5625rem;
+}
+@media (min-width: 48rem) {
+  .meet {
+    padding-top: 3.5rem 2.5rem 4rem;
+  }
+}
+.meet .meet-picture-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+  max-width: 68.75rem;
+}
+@media (min-width: 48rem) {
+  .meet .meet-picture-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 64rem) {
+  .meet .meet-picture-wrapper {
+    gap: 2rem;
+  }
+}
+.meet .meet-picture-wrapper picture {
+  width: 100%;
+}
+.meet .meet-picture-wrapper picture img {
+  width: 100%;
+  max-height: 9rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+@media (min-width: 64rem) {
+  .meet .meet-picture-wrapper picture img {
+    max-height: 18rem;
+  }
+}
+.meet .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+@media (min-width: 48rem) {
+  .meet .text {
+    max-width: 31.5rem;
+  }
+}
+.meet .text .title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.meet .text .title-wrapper h1 {
+  text-transform: uppercase;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 0.75rem;
+  line-height: 110%;
+  letter-spacing: 0.25rem;
+  color: #4D96A9;
+}
+@media (min-width: 768px) {
+  .meet .text .title-wrapper h1 {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 1024px) {
+  .meet .text .title-wrapper h1 {
+    font-size: 1rem;
+  }
+}
+.meet .text .title-wrapper h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 110%;
+  letter-spacing: 0;
+  color: #28283D;
+}
+@media (min-width: 768px) {
+  .meet .text .title-wrapper h2 {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  .meet .text .title-wrapper h2 {
+    font-size: 2.5rem;
+  }
+}
+.meet .text p {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #87879D;
+}
+
+footer.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: rgba(77, 150, 169, 0.99);
+  background-image: url("../assets/mobile/image-footer.jpg");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+}
+@media (min-width: 48rem) {
+  footer.section {
+    background-image: url("../assets/tablet/image-footer.jpg");
+  }
+}
+@media (min-width: 64rem) {
+  footer.section {
+    background-image: url("../assets/desktop/image-footer.jpg");
+  }
+}
+footer.section .number-wrapper {
+  position: absolute;
+  top: -6.5625rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+footer.section h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 110%;
+  letter-spacing: 0;
+  color: #FAFAFA;
+}
+@media (min-width: 768px) {
+  footer.section h2 {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  footer.section h2 {
+    font-size: 2.5rem;
+  }
+}
+footer.section p {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #FAFAFA;
+}
+footer.section .section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: 1;
+  padding: 2rem 4rem;
+}
+@media (min-width: 64rem) {
+  footer.section .section-content {
+    padding: 7rem 10rem;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
